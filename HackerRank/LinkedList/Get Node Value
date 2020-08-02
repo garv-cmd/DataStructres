@@ -1,0 +1,16 @@
+ static int getNode(SinglyLinkedListNode head, int pos) {
+        SinglyLinkedListNode temp = head;
+        int i=0;
+        while(temp!=null){
+            i++;
+            temp = temp.next;
+        }
+        int rem = i-pos;
+         SinglyLinkedListNode t1 = head;
+        while(rem-- !=1){
+            t1 = t1.next;
+        }
+
+        return (int)t1.data;
+
+    }

@@ -1,0 +1,16 @@
+static SinglyLinkedListNode reverse(SinglyLinkedListNode head) {
+    Stack<SinglyLinkedListNode> stack = new Stack<SinglyLinkedListNode>();
+    while(head.next != null){
+        stack.push(head);
+        head=head.next;
+    }
+    SinglyLinkedListNode res = head;
+    while(!stack.empty()){
+        head.next=stack.pop();
+        head=head.next;
+    }
+    head.next = null;
+    return res;
+
+
+    }
