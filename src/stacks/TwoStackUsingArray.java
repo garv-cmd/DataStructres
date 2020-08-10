@@ -41,7 +41,7 @@ public class TwoStackUsingArray {
     int pop2(){
         if(top2 < size){
             int x = arr[top2];
-            top2--;
+            top2++;
             return x;
         } else {
             System.out.println("Stack Underflow");
@@ -59,5 +59,8 @@ public class TwoStackUsingArray {
         stack.push1(5);
         System.out.println(stack.pop1());
         System.out.println(stack.pop2());
+        System.out.println(stack.pop2());
+
+
     }
 }
