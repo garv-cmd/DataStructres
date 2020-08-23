@@ -6,16 +6,14 @@ public class MainClass {
 
     public static void main(String args[])
     {
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        pq.add(11);
-        pq.add(1);
-        pq.add(9);
-        pq.add(7);
-        System.out.println(pq);
+        PriorityQueue<String> pq = new PriorityQueue<>();
+        pq.add("4");
+        pq.add("C++");
+        pq.add("WELCOME");
+        pq.add("C++");
+        while(!pq.isEmpty())
         System.out.println(pq.remove());
-        System.out.println(pq.remove());
-        System.out.println("poll "+pq.peek());
-        System.out.println(pq.poll());
+
 
 
     }
